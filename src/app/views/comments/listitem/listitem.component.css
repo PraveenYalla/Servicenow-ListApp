@@ -1,0 +1,18 @@
+.header-img {
+    background-image: url('https://cdn2.iconfinder.com/data/icons/ios-7-icons/50/user_male2-512.png');
+    background-size: cover;
+}
+
+mat-card.example-card.mat-card:hover {
+    background: #0ca79a;
+    color: #fff;
+}
+
+mat-card.example-card.mat-card:hover .mat-card-subtitle {
+    color: #fff;
+}
+
+.list-container {
+    height: 600px;
+    overflow: auto;
+}

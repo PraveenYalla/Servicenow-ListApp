@@ -1,0 +1,9 @@
+<div class="list-wrap" infiniteScroll [infiniteScrollDistance]="2" [infiniteScrollThrottle]="300" (scrolled)="onScroll()">
+    <h2>{{ title }}</h2>
+    <mat-form-field class="srch-field">
+        <input [(ngModel)]="searchText" matInput placeholder="Search Email">
+    </mat-form-field>
+    <div [dragula]='"bag-one"' class="list-container" [dragulaModel]='items'>
+        <app-listitem *ngFor="let comment of commentsList  | filter : searchText" [commentItem]="comment"></app-listitem>
+    </div>
+</div>
